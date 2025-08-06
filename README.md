@@ -10,17 +10,23 @@
 
 ### フォルダ構成
 
-フォルダ構成は以下で想定、ファイル名は例で、バージョン番号は自動補完する。構文を簡単にするためフォルダ名は空白なしに。
--  ☆: 手動で実行するファイル
+フォルダ構成は以下で想定。ファイル名は例で、バージョン番号は自動補完される。構文を簡単にするためフォルダ名は空白なしで作成。
+<br>☆: 手動で実行するファイル
+- Install_Chipset.js : 一番最初に実行すべき。古いバージョンでなく不明なデバイスになってる可能性がある。
+- Install_0_Network.bat : 先にネットワークにつなげたい。
+- Install_GPU_intel.bat : 表示に問題がなければ、インストールがひと段落してからでもいい。
+- Install_Assistant.bat : 最新ドライバーの更新を検出する目的。主に使うPCにのみ入っていればいい。
+- Install_Eizo.bat : Eizoのモニターを使っている場合のみ。
 
 ~~~
 Driver\
-├─ Install_0_Network.bat ☆
-├─ Install_GPU_intel.bat ☆
-├─ Install_Assistant.bat ☆
-├─ Install_Eizo.bat ☆
+├─ ☆ Install_0_Network.bat
+├─ ☆ Install_GPU_intel.bat
+├─ ☆ Install_Assistant.bat
+├─ ☆ Install_Eizo.bat
+├─ .ventoyignore
 ├── System_AnySystemName\
-│   └── Install_Chipset.js ☆
+│   └── ☆ Install_Chipset.js
 │   └── Intel-chipset_10.1.00001.0001\
 │       └── SetupChipset.exe
 ├── New\

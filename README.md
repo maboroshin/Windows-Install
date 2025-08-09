@@ -6,9 +6,15 @@
 - ソフトウェアのインストール → ポータブル化（主にポータブルアプリで探す）
 - Windows設定 / Edge設定
 
-→ [Windowsのインストール](https://github.com/maboroshin/Windows-Install/wiki/Windows%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+→ 詳細: [Windowsのインストール](https://github.com/maboroshin/Windows-Install/wiki/Windows%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+
+## ダウンロード
+
+緑の「Code」ボタンから、「Download Zip」を押す。
 
 ### フォルダ構成
+
+各種インストーラーを配置し、バッチファイルを実行すればサイレントインストールを実行します。すべて終わったらWindowsを再起動します。
 
 フォルダ構成は以下で想定。ファイル名は例で、バージョン番号は自動補完される。構文を簡単にするためフォルダ名は空白なしで作成。
 <br>☆: 手動で実行するファイル

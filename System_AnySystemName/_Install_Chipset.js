@@ -19,3 +19,4 @@ for (; !subFolders.atEnd(); subFolders.moveNext()) {
             WScript.Echo(folderName + " SetupChipset.exe Missing (見つからない)");
     }
 }
+

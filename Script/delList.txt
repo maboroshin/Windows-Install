@@ -14,14 +14,14 @@ C:\AMD
 C:\$WINDOWS.~BT
 C:\$Windows.~WS
 
-// In SendTo (‘—‚é“à‚Ì)
-// ƒfƒXƒNƒgƒbƒv (ƒVƒ‡[ƒgƒJƒbƒg‚ğì¬)
+// In SendTo (é€ã‚‹å†…ã®)
+// ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ— (ã‚·ãƒ§ãƒ¼ãƒˆã‚«ãƒƒãƒˆã‚’ä½œæˆ)
 %APPDATA%\Microsoft\Windows\SendTo\Desktop (create shortcut).DeskLink
-// FAX óMÒ
+// FAX å—ä¿¡è€…
 %APPDATA%\Microsoft\Windows\SendTo\Fax Recipient.lnk
-// ƒ[ƒ‹óMÒ
+// ãƒ¡ãƒ¼ãƒ«å—ä¿¡è€…
 %APPDATA%\Microsoft\Windows\SendTo\Mail Recipient.MAPIMail
-%APPDATA%\Microsoft\Windows/SendTo\Bluetooth ƒtƒ@ƒCƒ‹“]‘—.LNK
+%APPDATA%\Microsoft\Windows/SendTo\Bluetooth ãƒ•ã‚¡ã‚¤ãƒ«è»¢é€.LNK
 
 
 // Apps
@@ -38,10 +38,11 @@ C:\Users\Public\Desktop\Disk Master Free.lnk
 %USERPROFILE%\Documents\DVDFab
 
 // Windows XP
-C:/Documents and Settings/Default User/ƒfƒXƒNƒgƒbƒv/SpeedFan.lnk
-C:/Documents and Settings/Default User/ƒfƒXƒNƒgƒbƒv/CCleaner.lnk
-C:/Documents and Settings/Default User/ƒfƒXƒNƒgƒbƒv/DVDFab 8.lnk
-C:/Documents and Settings/Default User/ƒfƒXƒNƒgƒbƒv/Driver Magician Lite.lnk
-C:/Documents and Settings/Default User/ƒfƒXƒNƒgƒbƒv/Driver Magician.url
-C:/Documents and Settings/Default User/ƒfƒXƒNƒgƒbƒv/mp3DirectCut.lnk
+C:/Documents and Settings/Default User/ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—/SpeedFan.lnk
+C:/Documents and Settings/Default User/ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—/CCleaner.lnk
+C:/Documents and Settings/Default User/ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—/DVDFab 8.lnk
+C:/Documents and Settings/Default User/ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—/Driver Magician Lite.lnk
+C:/Documents and Settings/Default User/ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—/Driver Magician.url
+C:/Documents and Settings/Default User/ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—/mp3DirectCut.lnk
+
 

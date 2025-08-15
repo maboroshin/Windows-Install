@@ -1,15 +1,15 @@
 /*
-_dell.js
+_del.js
 
-English: Delete files from dellList.txt
+English: Delete files from delList.txt
          Set the files in the "Send to" folder as hidden.
-Usage  : Run _dell.bat
-         You can edit dellList.txt as you like
+Usage  : Run _del.bat
+         You can edit delList.txt as you like
  
-日本語 : dellList.txt を読みファイルを削除
+日本語 : delList.txt を読みファイルを削除
          「送る」フォルダのファイルは隠しファイルに変更
-使用法 : _dell.bat を実行
-         dellList.txt はお好みに編集可能
+使用法 : _del.bat を実行
+         delList.txt はお好みに編集可能
 
 Version 2025-08-15
 
@@ -18,9 +18,9 @@ var WshShell = new ActiveXObject("WScript.Shell");
 var fso = new ActiveXObject("Scripting.FileSystemObject");
 /* - */
 var currentFolder = fso.GetParentFolderName(WScript.ScriptFullName);
-var dellList = fso.BuildPath(currentFolder, "dellList.txt")
+var delList = fso.BuildPath(currentFolder, "delList.txt")
 
-var a = LineToArray(dellList);
+var a = LineToArray(delList);
 var rComment = /^\/\//;
 
 for (var i in a) {
@@ -69,3 +69,4 @@ function DeleteEmptyFolder(Obj) {
     }
   }
 }
+

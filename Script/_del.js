@@ -11,9 +11,16 @@ Usage  : Run _del.bat
 使用法 : _del.bat を実行
          delList.txt はお好みに編集可能
 
-Version 2025-08-15
+Version 2025-08-15 Ver.2
 
  */
+var shell = new ActiveXObject("Shell.Application");
+if (WScript.Arguments.length === 0) { // Run as administrator (管理者権限で実行)
+  shell.ShellExecute("wscript.exe", '"' + WScript.ScriptFullName + '" runas', "", "runas", 1);
+  WScript.Quit();
+}
+
+
 var WshShell = new ActiveXObject("WScript.Shell");
 var fso = new ActiveXObject("Scripting.FileSystemObject");
 /* - */
@@ -69,4 +76,3 @@ function DeleteEmptyFolder(Obj) {
     }
   }
 }
-

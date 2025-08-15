@@ -1,10 +1,10 @@
 **Windowsのインストール**では、面倒な作業がたくさんある。**Windows 10**から、デジタル認証でプロダクトキーの入力は不要になり、アップデートも超簡単になったが、以下をなるべく簡略化したい。簡単にしておきたいが、複雑なISOファイル作成とかも避けたい。
 
-- インストール工程のクリック作業 → 自動化したい
-- ドライバーのインストール → 統合。またここのバッチファイルでサイレントインストール
-- アップデートのインストール → 統合（そんなに手間ではないが）
-- ソフトウェアのインストール → ポータブル化（主にポータブルアプリで探す）
-- Windows設定 / Edge設定
+* インストール工程のクリック作業 → 自動化したい
+* ドライバーのインストール → 統合。またここのバッチファイルでサイレントインストール
+* アップデートのインストール → 統合（そんなに手間ではないが）
+* ソフトウェアのインストール → ポータブル化（主にポータブルアプリで探す）
+* Windows設定 / Edge設定
 
 → 詳細: [Windowsのインストール](https://github.com/maboroshin/Windows-Install/wiki/Windows%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
 
@@ -14,7 +14,7 @@
 
 ## 使用法
 
-各種インストーラーを配置し、バッチファイルを実行すればサイレントインストールを実行します。すべて終わったらWindowsを再起動します。
+各種インストーラーを配置し、各バッチファイルを実行すればサイレントインストールを実行します。すべて終わったらWindowsを再起動します。
 
 インストーラー実行時の「次へ」を押すのを減らす程度でたいしたものではない。
 
@@ -22,21 +22,21 @@
 
 フォルダ構成は以下で想定。ファイル名は例で、バージョン番号は自動補完される。構文を簡単にするためフォルダ名は空白なしで作成。
 <br>☆: 手動で実行するファイル
-- Install_Chipset.js : 一番最初に実行すべき。古いバージョンでなく不明なデバイスになってる可能性がある。
-- Install_0_Network.bat : 先にネットワークにつなげたい。
-- Install_GPU_intel.bat : 表示に問題がなければ、インストールがひと段落してからでもいい。
-- Install_Assistant.bat : 最新ドライバーの更新を検出する目的。主に使うPCにのみ入っていればいい。
-- Install_Eizo.bat : Eizoのモニターを使っている場合のみ。
+* Install_Chipset.js : 一番最初に実行すべき。古いバージョンでなく不明なデバイスになってる可能性がある。
+* Install_0_Network.bat : 先にネットワークにつなげたい。
+* Install_GPU_intel.bat : 表示に問題がなければ、インストールがひと段落してからでもいい。
+* Install_Assistant.bat : 最新ドライバーの更新を検出する目的。主に使うPCにのみ入っていればいい。
+* Install_Eizo.bat : Eizoのモニターを使っている場合のみ。
 
 ~~~
 Driver\
 ├─ ☆ Install_0_Network.bat
-├─ ☆ Install_GPU_intel.bat
 ├─ ☆ Install_Assistant.bat
 ├─ ☆ Install_Eizo.bat
+├─ ☆ Install_GPU_intel.bat
 ├─ .ventoyignore
 ├── System_AnySystemName\
-│   └── ☆ Install_Chipset.js
+│   └── ☆ _Install_Chipset.js
 │   └── Intel-chipset_10.1.00001.0001\
 │       └── SetupChipset.exe
 ├── New\
@@ -49,3 +49,12 @@ Driver\
 └── Eizo\
     └── SIS1117_Setup.exe
 ~~~
+
+### Script フォルダ
+
+* _del.js : 不要なファイルとフォルダを削除。delList.txtの各行が削除対象。
+* _lnk.js : リンクを作成。送る (SendTo) に getFullPath.js を登録。
+* delList.txt
+* getFullPath.js : ドロップしたファイルのフルパスをコピーする。delList.txt への登録を補助。
+
+

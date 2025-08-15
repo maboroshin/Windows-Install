@@ -1,0 +1,47 @@
+// Windows temp folder
+C:\Config.Msi
+C:\$WinREAgent
+C:\.rnd
+C:\WINDOWS\imsins.BAK
+C:\WINDOWS\bitssetup.log
+C:\WINDOWS\cmsetacl.log
+
+// Driver install folder
+C:\Intel
+C:\NVIDIA
+C:\ATI
+C:\AMD
+C:\$WINDOWS.~BT
+C:\$Windows.~WS
+
+// In SendTo (送る内の)
+// デスクトップ (ショートカットを作成)
+%APPDATA%\Microsoft\Windows\SendTo\Desktop (create shortcut).DeskLink
+// FAX 受信者
+%APPDATA%\Microsoft\Windows\SendTo\Fax Recipient.lnk
+// メール受信者
+%APPDATA%\Microsoft\Windows\SendTo\Mail Recipient.MAPIMail
+%APPDATA%\Microsoft\Windows/SendTo\Bluetooth ファイル転送.LNK
+
+
+// Apps
+C:\Users\Public\Desktop\Screen InStyle.lnk
+C:\Users\Public\Desktop\Disk Master Free.lnk
+
+%USERPROFILE%\Desktop\Driver Magician.url
+%USERPROFILE%\Desktop\ImDisk Virtual Disk Driver.lnk
+%USERPROFILE%\Desktop\Mount Image File.lnk
+%USERPROFILE%\Desktop\RamDisk Configuration.lnk
+%USERPROFILE%\Desktop\NTLite.lnk
+
+%USERPROFILE%\Documents\DVDFab\Log
+%USERPROFILE%\Documents\DVDFab
+
+// Windows XP
+C:/Documents and Settings/Default User/デスクトップ/SpeedFan.lnk
+C:/Documents and Settings/Default User/デスクトップ/CCleaner.lnk
+C:/Documents and Settings/Default User/デスクトップ/DVDFab 8.lnk
+C:/Documents and Settings/Default User/デスクトップ/Driver Magician Lite.lnk
+C:/Documents and Settings/Default User/デスクトップ/Driver Magician.url
+C:/Documents and Settings/Default User/デスクトップ/mp3DirectCut.lnk
+

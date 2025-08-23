@@ -1,24 +1,24 @@
 /*
-getFullPath.js
+GetFullPath.js
 
 English: Script to copy full path
 Usage  : Drop the target file into this script
  
-“ú–{Œê : ƒtƒ‹ƒpƒX‚ğƒRƒs[‚µ‚Ü‚·
-g—p–@ : ‘ÎÛ‚Ìƒtƒ@ƒCƒ‹‚ğ‚±‚ÌƒXƒNƒŠƒvƒg‚Éƒhƒƒbƒv
+æ—¥æœ¬èª : ãƒ•ãƒ«ãƒ‘ã‚¹ã‚’ã‚³ãƒ”ãƒ¼ã—ã¾ã™
+ä½¿ç”¨æ³• : å¯¾è±¡ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã“ã®ã‚¹ã‚¯ãƒªãƒ—ãƒˆã«ãƒ‰ãƒ­ãƒƒãƒ—
 
 Version 2025-08-15
 
  */
 
-var slashType = 1; // 0 : Slash,  1 : Backslash (‰~‹L†)
+var slashType = 1; // 0 : Slash,  1 : Backslash (å††è¨˜å·)
 
 var aSlashType = ["/", "\\"];
 
 var wsArg = WScript.Arguments;
 if (wsArg.length == 0) {
   var msg = "Drop the target file into this " + WScript.ScriptName  + "\n\n" +
-  "‚±‚Ì " + WScript.ScriptName  + " ‚Éƒtƒ@ƒCƒ‹‚ğƒhƒƒbƒv‚µ‚Ä‚­‚¾‚³‚¢B";
+  "ã“ã® " + WScript.ScriptName  + " ã«ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ‰ãƒ­ãƒƒãƒ—ã—ã¦ãã ã•ã„ã€‚";
   WScript.echo(msg);
   // RunSelfOpen();
   WScript.quit();
@@ -52,4 +52,5 @@ function setClipboardData(s)
 function RunSelfOpen() {
   var WshShell = WScript.CreateObject("Wscript.Shell");
   WshShell.Run("notepad " + WScript.ScriptName);
+
 }

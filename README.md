@@ -55,6 +55,6 @@ Driver\
 * _del.js : 不要なファイルとフォルダを削除。delList.txtの各行が削除対象。
 * _lnk.js : リンクを作成。送る (SendTo) に getFullPath.js を登録。
 * delList.txt
-* getFullPath.js : ドロップしたファイルのフルパスをコピーする。delList.txt への登録を補助。
+* GetFullPath.js : ドロップしたファイルのフルパスをコピーする。delList.txt への登録を補助。
 
 

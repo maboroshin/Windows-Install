@@ -16,17 +16,18 @@
 
 各種インストーラーを配置し、各バッチファイルを実行すればサイレントインストールを実行します。すべて終わったらWindowsを再起動します。
 
-インストーラー実行時の「次へ」を押すのを減らす程度でたいしたものではない。
+効果は、インストーラー実行時の「次へ」を押すのを減らす程度でたいしたものではない。
 
 ## フォルダ構成
 
 フォルダ構成は以下で想定。ファイル名は例で、バージョン番号は自動補完される。構文を簡単にするためフォルダ名は空白なしで作成。
+<br>System_AnySystemName : System_LIVA_Z2 など改名しシステムごとに作る。
 <br>☆: 手動で実行するファイル
-* Install_Chipset.js : 一番最初に実行すべき。古いバージョンでなく不明なデバイスになってる可能性がある。
+* _Install_Chipset.js : 一番最初に実行すべき。古いドライバではなく、ドライバ自体がなく不明なデバイスになってることがあるので。
 * Install_0_Network.bat : 先にネットワークにつなげたい。
-* Install_GPU_intel.bat : 表示に問題がなければ、インストールがひと段落してからでもいい。
-* Install_Assistant.bat : 最新ドライバーの更新を検出する目的。主に使うPCにのみ入っていればいい。
-* Install_Eizo.bat : Eizoのモニターを使っている場合のみ。
+* Install_GPU_intel.bat : 表示に問題がなければ、ほかのドライバーのインストールがひと段落してからでもいい。
+* Install_Assistant.bat : 最新ドライバーの更新を検出するのが目的。同じドライバを使うPCのうち1台に入っていれば検出できる。
+* Install_Eizo.bat : Eizoのモニターを使っている場合のみ。Screen InStyleというソフト。
 
 ~~~
 Driver\
@@ -50,11 +51,23 @@ Driver\
     └── SIS1117_Setup.exe
 ~~~
 
+### 仕様
+
+以下の XXX はどんな文字列でも合致します。
+
+* _Install_Chipset.js : Intel-chipset_XXX フォルダ内の SetupChipset.exe を実行。
+* Install_0_Network.bat : New フォルダ内の RealtekGBE 内の Install_Win11_Win10_XXX.exe を実行。
+* Install_GPU_intel.bat : New フォルダ内の gfx_win_1XXX.exe を実行。
+* Install_Assistant.bat : New フォルダ内の Intel-Driver-and-Support-Assistant-Installer.exe を実行。
+* Install_Eizo.bat : Eizo フォルダ内の SISXXX_Setup.exe を実行。
+
+中身を書き換えればどんなファイルでも対応します。
+
 ### Script フォルダ
 
 * _del.js : 不要なファイルとフォルダを削除。delList.txtの各行が削除対象。
-* _lnk.js : リンクを作成。送る (SendTo) に getFullPath.js を登録。
-* delList.txt
+* _lnk.js : リンクを作成。送る (SendTo) に GetFullPath.js を登録。
+* delList.txt : 削除したいファイルを1行ごとに書く。
 * GetFullPath.js : ドロップしたファイルのフルパスをコピーする。delList.txt への登録を補助。
 
 

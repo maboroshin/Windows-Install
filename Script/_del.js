@@ -8,7 +8,7 @@ Usage  : Run _del.bat
  
 日本語 : delList.txt を読みファイルを削除
          「送る」フォルダのファイルは隠しファイルに変更
-使用法 : _del.bat を実行
+使用法 : _del.js を実行
          delList.txt はお好みに編集可能
 
 Version 2025-08-15 Ver.2

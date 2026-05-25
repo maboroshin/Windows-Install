@@ -9,7 +9,7 @@
 → 詳細: [Windowsのインストール](https://github.com/maboroshin/Windows-Install/wiki/Windows%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
 
 #### 更新情報
-- 2026年5月更新: 漏れてた Install_GPU_intel.bat を追加。_del.js の誤記修正。バッチから Install_0_Network.js にし、古いWi-Fi-カードをAC3165とAX200を判別し別のドライバーをインストール。
+- 2026年5月更新: 漏れてた Install_GPU_intel.bat を追加。_del.js の誤記修正。batバッチファイルから Install_0_Network.js スクリプトに変更し、古いWi-Fi-カードをAC3165とAX200を判別し別のドライバーをインストール。
   - 課題: GPUも判別して第11世代以降のドライバーを分けないと。それかGPU用のbatファイルを複数置くかだ。
 
 ## ダウンロード

@@ -1,0 +1,3 @@
+Last Update 2026-03-24
+WiFi-24.20.2-Driver64-Win10-Win11.exe
+BT-24.10.0-64UWD-Win10-Win11.exe
